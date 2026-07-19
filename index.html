@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Swagatika Sahoo - Assistant Professor at IIIT Dharwad. Research in Blockchain, Machine Learning, IoT Security.">
+    <meta name="keywords" content="Swagatika Sahoo, IIIT Dharwad, Blockchain, IoT Security, Machine Learning, Computer Science">
+    <meta name="author" content="Swagatika Sahoo">
+    <meta name="theme-color" content="#0a1929">
+    <meta property="og:title" content="Swagatika Sahoo - Assistant Professor, IIIT Dharwad">
+    <meta property="og:description" content="Research in Blockchain, Machine Learning, and IoT Security.">
+    <meta property="og:type" content="website">
+    <title>Swagatika Sahoo — Assistant Professor, IIIT Dharwad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Inline pre-paint theme to avoid FOUC
+        (function() {
+            try {
+                var saved = localStorage.getItem('theme');
+                var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var theme = saved || (prefersDark ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav container">
+            <a href="#home" class="brand" data-page-link="home">
+                <span class="brand-mark">SS</span>
+                <span class="brand-text">Swagatika Sahoo</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-page-link="home">Home</a></li>
+                <li><a href="#about" data-page-link="about">About</a></li>
+                <li><a href="#research" data-page-link="research">Research</a></li>
+                <li><a href="#people" data-page-link="people">People</a></li>
+                <li><a href="#teaching" data-page-link="teaching">Teaching</a></li>
+                <li><a href="#publications" data-page-link="publications">Publications</a></li>
+                <li><a href="#talks" data-page-link="talks">Talks</a></li>
+                <li><a href="#service" data-page-link="service">Service</a></li>
+                <li><a href="#videos" data-page-link="videos">Videos</a></li>
+                <li><a href="#tools" data-page-link="tools">Tools</a></li>
+                <li><a href="#gallery" data-page-link="gallery">Gallery</a></li>
+                <li><a href="#prospective" data-page-link="prospective" class="nav-hiring">Hiring PhD Students</a></li>
+                <li><a href="#awards" data-page-link="awards">Awards</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme (press T)">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+    <!-- ============================================================== -->
+    <!-- HOME PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="home">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-photo reveal">
+                    <div class="photo-frame">
+                        <div class="photo-ring"></div>
+                        <img src="static/img/profpic.jpeg" alt="Swagatika Sahoo" loading="eager">
+                    </div>
+                </div>
+
+                <div class="hero-info">
+                    <p class="hero-eyebrow reveal">Academic Portfolio</p>
+                    <h1 class="reveal">Swagatika <span class="accent-text">Sahoo</span></h1>
+                    <div class="title reveal">Assistant Professor</div>
+                    <div class="affiliation reveal">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Indian Institute of Information Technology, Dharwad
+                    </div>
+                    <div class="previous-role reveal">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        Former Postdoctoral Researcher, University of Montreal
+                    </div>
+                    <div class="contact-line reveal">
+                        <span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="/cdn-cgi/l/email-protection#166561777177627f7d77567f7f7f62726172387775387f78"><span class="__cf_email__" data-cfemail="4e3d392f292f3a27252f0e2727273a2a392a602f2d602720">[email&#160;protected]</span></a></span>
+                        <span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Dharwad, Karnataka, India</span>
+                    </div>
+                    <div class="office-info reveal">
+                        <span class="office-label">Office</span>
+                        <span class="office-value">Department of CSE, IIIT Dharwad Campus</span>
+                    </div>
+
+                    <div class="hero-links reveal">
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 18l1.5-3L12 3l8.5 12L22 18"/><circle cx="12" cy="15" r="3"/></svg>
+                            Google Scholar
+                        </a>
+                        <a href="https://github.com/swagatikasun" target="_blank" rel="noopener" class="btn btn-outline">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="CV_Swagatika_Sahoo.pdf" target="_blank" rel="noopener" class="btn btn-gold">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+                            Curriculum Vitae
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Daily Quote — beside the text, on the right side -->
+                <aside class="quote-box quote-box-side reveal" id="quoteBox">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="quote-label">Quote of the Day</p>
+                    <p class="quote-text" id="quoteText">Loading today's quote…</p>
+                    <p class="quote-meta">
+                        <span class="quote-dash">—</span>
+                        <span class="quote-author" id="quoteAuthor"></span>
+                    </p>
+                    <div class="quote-date">
+                        <div class="quote-day" id="quoteDay">—</div>
+                        <div class="quote-month" id="quoteMonth">—</div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="hero-stats container">
+                <div class="stat reveal">
+                    <div class="stat-value">13+</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Research Areas</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Best Paper Awards</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat-value">5+</div>
+                    <div class="stat-label">Years of Research</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NEWS — FLASH CARDS ===== -->
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Updates</span>
+                    <h2>Latest News</h2>
+                </div>
+
+                <!-- Flash news ticker — placed at the TOP of the Updates block -->
+                <div class="flash-ticker flash-ticker-inline reveal" id="flashTicker" aria-label="Latest updates ticker">
+                    <div class="flash-ticker-label">
+                        <span class="flash-pulse"></span>
+                        <span class="flash-label-text">FLASH</span>
+                    </div>
+                    <div class="flash-ticker-track">
+                        <div class="flash-ticker-content" id="flashTickerContent">
+                            <span class="flash-item">📢 Joined IIIT Dharwad as Assistant Professor in 2026</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">🎓 Postdoctoral Research completed at University of Montreal (2025)</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">📄 Metasurance framework published at ENASE'24, France</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">🏆 Best Paper Award — ACSS 2022</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">📚 13+ publications in top-tier journals and conferences</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">🌐 Open to research collaborations and visiting lectures</span>
+                            <span class="flash-sep">◆</span>
+                        </div>
+                        <div class="flash-ticker-content" aria-hidden="true">
+                            <span class="flash-item">📢 Joined IIIT Dharwad as Assistant Professor in 2026</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">🎓 Postdoctoral Research completed at University of Montreal (2025)</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">📄 Metasurance framework published at ENASE'24, France</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">🏆 Best Paper Award — ACSS 2022</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">📚 13+ publications in top-tier journals and conferences</span>
+                            <span class="flash-sep">◆</span>
+                            <span class="flash-item">🌐 Open to research collaborations and visiting lectures</span>
+                            <span class="flash-sep">◆</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rotating flash cards -->
+                <div class="flash-cards reveal" id="flashCards">
+                    <div class="flash-card flash-card-1 active">
+                        <div class="flash-card-header">
+                            <span class="flash-card-badge">Breaking</span>
+                            <span class="flash-card-date">2026</span>
+                        </div>
+                        <h3>Joined IIIT Dharwad as Assistant Professor</h3>
+                        <p>Thrilled to begin a new chapter in the Department of Computer Science &amp; Engineering, contributing to research and teaching in blockchain, ML, and IoT security.</p>
+                    </div>
+                    <div class="flash-card flash-card-2">
+                        <div class="flash-card-header">
+                            <span class="flash-card-badge">Achievement</span>
+                            <span class="flash-card-date">2025</span>
+                        </div>
+                        <h3>Postdoctoral Research at University of Montreal</h3>
+                        <p>Completed a productive postdoctoral stint at the LRC Lab, advancing next-generation security solutions for the Internet of Things.</p>
+                    </div>
+                    <div class="flash-card flash-card-3">
+                        <div class="flash-card-header">
+                            <span class="flash-card-badge">Publication</span>
+                            <span class="flash-card-date">2024</span>
+                        </div>
+                        <h3>Metasurance at ENASE'24, France</h3>
+                        <p>Presented the Metasurance framework — a blockchain-based insurance management platform for the Metaverse — at ENASE'24 in Angers, France.</p>
+                    </div>
+                    <div class="flash-card flash-card-4">
+                        <div class="flash-card-header">
+                            <span class="flash-card-badge">Award</span>
+                            <span class="flash-card-date">2022</span>
+                        </div>
+                        <h3>Best Paper Award — ACSS 2022</h3>
+                        <p>Honoured to receive the Best Paper Award at ACSS 2022 for contributions to automated land records management using blockchain technology.</p>
+                    </div>
+                    <div class="flash-card flash-card-5">
+                        <div class="flash-card-header">
+                            <span class="flash-card-badge">Opportunity</span>
+                            <span class="flash-card-date">2026</span>
+                        </div>
+                        <h3>Open to Research Collaboration</h3>
+                        <p>Actively seeking collaborators for projects in federated learning, blockchain interoperability, and lightweight cryptography for IoT.</p>
+                    </div>
+
+                    <div class="flash-card-dots" id="flashCardDots">
+                        <button class="flash-dot active" data-index="0" aria-label="Show news 1"></button>
+                        <button class="flash-dot" data-index="1" aria-label="Show news 2"></button>
+                        <button class="flash-dot" data-index="2" aria-label="Show news 3"></button>
+                        <button class="flash-dot" data-index="3" aria-label="Show news 4"></button>
+                        <button class="flash-dot" data-index="4" aria-label="Show news 5"></button>
+                    </div>
+                </div>
+
+                <!-- Static news list organized by year -->
+                <div class="news-box reveal" style="margin-top: 2.5rem;">
+                    <h3><span class="news-icon">📌</span> Highlights Archive</h3>
+
+                    <div class="news-year-group">
+                        <h4>2026</h4>
+                        <ul class="news-list">
+                            <li>
+                                <span class="date">Jan</span>
+                                <span class="news-text">Joined <strong>IIIT Dharwad</strong> as Assistant Professor in the Department of Computer Science &amp; Engineering.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="news-year-group">
+                        <h4>2025</h4>
+                        <ul class="news-list">
+                            <li>
+                                <span class="date">Dec</span>
+                                <span class="news-text">Completed <strong>Postdoctoral Research</strong> at the LRC Lab, University of Montreal.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="news-year-group">
+                        <h4>2024</h4>
+                        <ul class="news-list">
+                            <li>
+                                <span class="date">Apr</span>
+                                <span class="news-text">Published <em>Metasurance</em> framework at <strong>ENASE'24</strong>, Angers, France.</span>
+                            </li>
+                            <li>
+                                <span class="date">Mar</span>
+                                <span class="news-text">Presented the BLRS land records system at <strong>ICBC'23</strong>, Dubai, UAE.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="news-year-group">
+                        <h4>2022 &amp; Earlier</h4>
+                        <ul class="news-list">
+                            <li>
+                                <span class="date">2022</span>
+                                <span class="news-text">Received <strong>Best Paper Award</strong> at ACSS 2022 for blockchain-based land records work.</span>
+                            </li>
+                            <li>
+                                <span class="date">2021</span>
+                                <span class="news-text">Awarded <strong>Best Paper Presentation</strong> at Research Scholar Day, IIT Patna.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (home) -->
+
+    <!-- ============================================================== -->
+    <!-- ABOUT PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="about">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">About</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-text">
+                    <p class="reveal">
+                        I am currently an <strong>Assistant Professor</strong> at the <strong>Indian Institute of Information Technology, Dharwad</strong>.
+                        My research journey began with a focus on distributed systems and has evolved to encompass blockchain technology,
+                        machine learning, and lightweight cryptography for secure, scalable IoT environments.
+                    </p>
+                    <p class="reveal">
+                        Prior to joining IIIT Dharwad, I completed my postdoctoral research at the LRC Lab, <strong>University of Montreal</strong>,
+                        where I worked on advancing next-generation security solutions for the Internet of Things. During my Ph.D. at
+                        <strong>IIT Patna</strong>, I contributed to novel architectures for secure cross-chain communication,
+                        decentralized access control, and privacy-preserving ownership transfer.
+                    </p>
+                    <p class="reveal">
+                        Beyond research, I am passionate about mentoring students, fostering interdisciplinary collaboration,
+                        and exploring creative pursuits such as poetry and sustainable art using upcycled materials.
+                    </p>
+
+                    <h3 class="reveal">Research Interests</h3>
+                    <div class="interests-grid stagger-children">
+                        <span class="chip reveal"><span class="chip-icon">⛓️</span>Blockchain Technology</span>
+                        <span class="chip reveal"><span class="chip-icon">🤖</span>Machine Learning</span>
+                        <span class="chip reveal"><span class="chip-icon">🔐</span>IoT Authentication</span>
+                        <span class="chip reveal"><span class="chip-icon">📐</span>Formal Methods</span>
+                        <span class="chip reveal"><span class="chip-icon">🌐</span>Federated Systems</span>
+                        <span class="chip reveal"><span class="chip-icon">🛡️</span>Access Control</span>
+                        <span class="chip reveal"><span class="chip-icon">🔒</span>Privacy &amp; Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EDUCATION — Detailed Graduation Timeline ===== -->
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Education</span>
+                    <h2>Academic Journey</h2>
+                </div>
+                <div class="edu-timeline stagger-children">
+                    <div class="edu-item reveal">
+                        <div class="edu-content">
+                            <div class="degree">Ph.D. in Computer Science &amp; Engineering</div>
+                            <div class="institution">Indian Institute of Technology Patna</div>
+                            <div class="year">Aug 2019 – Present</div>
+                            <p class="edu-detail">Thesis on secure cross-chain communication, decentralized access control, and privacy-preserving ownership transfer using blockchain technology.</p>
+                        </div>
+                    </div>
+                    <div class="edu-item reveal">
+                        <div class="edu-content">
+                            <div class="degree">Postdoctoral Researcher</div>
+                            <div class="institution">LRC Lab, University of Montreal, Canada</div>
+                            <div class="year">Jan 2023 – Dec 2025</div>
+                            <p class="edu-detail">Worked on next-generation security solutions for the Internet of Things, federated learning, and lightweight cryptographic protocols.</p>
+                        </div>
+                    </div>
+                    <div class="edu-item reveal">
+                        <div class="edu-content">
+                            <div class="degree">M.Tech in Computer Science &amp; Engineering</div>
+                            <div class="institution">Biju Patnaik University of Technology</div>
+                            <div class="year">Aug 2014 – May 2016</div>
+                            <p class="edu-detail">Specialization in distributed systems and data mining; thesis on parallel forecasting using incremental K-means clustering.</p>
+                        </div>
+                    </div>
+                    <div class="edu-item reveal">
+                        <div class="edu-content">
+                            <div class="degree">B.Tech in Computer Science &amp; Engineering</div>
+                            <div class="institution">Biju Patnaik University of Technology</div>
+                            <div class="year">Aug 2008 – May 2012</div>
+                            <p class="edu-detail">Foundational training in computer science, algorithms, and software engineering. Graduated with distinction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROFESSIONAL EXPERIENCE ===== -->
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Experience</span>
+                    <h2>Professional Experience</h2>
+                </div>
+                <div class="edu-timeline stagger-children">
+                    <div class="edu-item reveal">
+                        <div class="edu-content">
+                            <div class="degree">Assistant Professor</div>
+                            <div class="institution">Indian Institute of Information Technology, Dharwad</div>
+                            <div class="year">Jan 2026 – Present</div>
+                        </div>
+                    </div>
+                    <div class="edu-item reveal">
+                        <div class="edu-content">
+                            <div class="degree">Postdoctoral Researcher</div>
+                            <div class="institution">University of Montreal, Canada</div>
+                            <div class="year">Jan 2023 – Dec 2025</div>
+                        </div>
+                    </div>
+                    <div class="edu-item reveal">
+                        <div class="edu-content">
+                            <div class="degree">Assistant Professor</div>
+                            <div class="institution">GIET State University, Gunupur</div>
+                            <div class="year">Jul 2016 – Jul 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (about) -->
+
+    <!-- ============================================================== -->
+    <!-- RESEARCH PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="research">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Research</span>
+                    <h2>Research Focus</h2>
+                </div>
+                <div class="research-text">
+                    <p class="reveal">
+                        My research lies at the intersection of <strong>trust, privacy, and decentralization</strong> in complex distributed systems.
+                        I focus on designing architectures that enable secure, scalable, and interoperable blockchain ecosystems for real-world applications.
+                    </p>
+                    <ul class="research-list reveal">
+                        <li>Self-sovereign identity frameworks using blockchain and decentralized identifiers (DIDs)</li>
+                        <li>Behavior-aware machine learning for federated IoT security</li>
+                        <li>Lightweight privacy-preserving techniques: homomorphic encryption, zero-knowledge proofs</li>
+                        <li>Scalable consensus mechanisms and interoperable blockchain architectures</li>
+                        <li>Real-time threat detection using graph-based and temporal modeling</li>
+                        <li>Blockchain-based smart contract verification and enforcement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESEARCH AREAS — Detailed Cards ===== -->
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Areas</span>
+                    <h2>Research Areas in Depth</h2>
+                </div>
+                <div class="research-areas-grid stagger-children">
+                    <div class="research-area-card reveal">
+                        <div class="area-num">01</div>
+                        <h4>Blockchain &amp; Distributed Systems</h4>
+                        <p>Architectures for secure cross-chain communication, decentralized access control, smart contract verification, and trustless consensus in heterogeneous networks.</p>
+                        <div class="area-tags">
+                            <span>Hyperledger</span>
+                            <span>Ethereum</span>
+                            <span>Consensus</span>
+                        </div>
+                    </div>
+                    <div class="research-area-card reveal">
+                        <div class="area-num">02</div>
+                        <h4>Machine Learning for Security</h4>
+                        <p>Behavior-aware threat detection, federated learning with privacy guarantees, and graph-based analysis of attack patterns in distributed environments.</p>
+                        <div class="area-tags">
+                            <span>Federated Learning</span>
+                            <span>Graph NN</span>
+                            <span>Anomaly Detection</span>
+                        </div>
+                    </div>
+                    <div class="research-area-card reveal">
+                        <div class="area-num">03</div>
+                        <h4>IoT Security &amp; Privacy</h4>
+                        <p>Lightweight authentication, key management, and privacy-preserving protocols tailored for resource-constrained IoT devices and edge deployments.</p>
+                        <div class="area-tags">
+                            <span>Authentication</span>
+                            <span>ZKP</span>
+                            <span>Edge Computing</span>
+                        </div>
+                    </div>
+                    <div class="research-area-card reveal">
+                        <div class="area-num">04</div>
+                        <h4>Formal Methods &amp; Verification</h4>
+                        <p>Rigorous specification and verification of security protocols, smart contracts, and distributed algorithms using model checking and theorem proving.</p>
+                        <div class="area-tags">
+                            <span>Model Checking</span>
+                            <span>Symbolic Verification</span>
+                            <span>Smart Contracts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ONGOING PROJECTS ===== -->
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Ongoing</span>
+                    <h2>Current Research Projects</h2>
+                </div>
+                <div class="project-grid stagger-children">
+                    <div class="project-card reveal">
+                        <div class="project-icon">🔐</div>
+                        <h4>Decentralized Identity for IoT Devices</h4>
+                        <p>Building self-sovereign identity (SSI) solutions using DIDs and verifiable credentials to enable secure, privacy-preserving authentication for millions of IoT devices.</p>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-icon">🧠</div>
+                        <h4>Behavior-Aware Federated Learning</h4>
+                        <p>A novel FL framework that adapts aggregation strategies based on detected client behavior, improving robustness against poisoning and free-rider attacks.</p>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-icon">⛓️</div>
+                        <h4>Cross-Chain Interoperability Protocol</h4>
+                        <p>Designing secure bridges and atomic swap mechanisms for trustless asset and message transfer between heterogeneous blockchain networks.</p>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-icon">🌐</div>
+                        <h4>Smart City Privacy Framework</h4>
+                        <p>Privacy-by-design architecture combining blockchain, edge computing, and zero-knowledge proofs to enable secure smart city services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COMPLETED PROJECTS ===== -->
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Completed</span>
+                    <h2>Selected Past Projects</h2>
+                </div>
+                <div class="project-grid stagger-children">
+                    <div class="project-card reveal">
+                        <div class="project-icon">📜</div>
+                        <h4>Blockchain-Based Land Registry Application</h4>
+                        <p>A Blockchain-based application for managing land registry related activities. Built using the Hyperledger Fabric blockchain platform with Go and JavaScript.</p>
+                        <a href="https://github.com/swagatikasun/land-registry-network" target="_blank" rel="noopener" class="btn btn-outline">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-icon">♻️</div>
+                        <h4>Blockchain-Based E-Waste Management &amp; Traceability</h4>
+                        <p>A decentralized system for forward and reverse supply chain traceability in electronic waste management using blockchain smart contracts.</p>
+                        <a href="https://github.com/swagatikasun/e-waste-management-ether" target="_blank" rel="noopener" class="btn btn-outline">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESEARCH VISION ===== -->
+        <section>
+            <div class="container">
+                <div class="vision-box reveal">
+                    <h3>🔭 Future Research Vision</h3>
+                    <p>
+                        Looking ahead, I aim to bridge the gap between <strong>theoretical cryptography</strong> and <strong>practical, deployable security systems</strong>.
+                        My long-term goal is to build a research group that produces robust, real-world solutions for trust and privacy
+                        in the next generation of decentralized systems — from IoT to national-scale digital infrastructure.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (research) -->
+
+    <!-- ============================================================== -->
+    <!-- TEACHING PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="teaching">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Teaching</span>
+                    <h2>Courses I Teach</h2>
+                </div>
+                <p class="reveal section-lede">
+                    I am committed to delivering conceptually rigorous, practice-driven instruction. My teaching spans foundational computer science
+                    and advanced topics in distributed systems and security.
+                </p>
+                <div class="teaching-grid stagger-children">
+                    <div class="teaching-card reveal">
+                        <div class="card-icon">⛓️</div>
+                        <h4>Blockchain &amp; Distributed Systems</h4>
+                        <p>Covering consensus protocols, smart contracts, and decentralized architectures.</p>
+                    </div>
+                    <div class="teaching-card reveal">
+                        <div class="card-icon">🤖</div>
+                        <h4>Machine Learning &amp; Security</h4>
+                        <p>Integrating ML techniques with cybersecurity for threat detection and mitigation.</p>
+                    </div>
+                    <div class="teaching-card reveal">
+                        <div class="card-icon">🧮</div>
+                        <h4>Data Structures &amp; Algorithms</h4>
+                        <p>Core computational thinking, problem-solving, and algorithmic design principles.</p>
+                    </div>
+                    <div class="teaching-card reveal">
+                        <div class="card-icon">🗄️</div>
+                        <h4>Database Management Systems</h4>
+                        <p>Relational models, query optimization, and transaction management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (teaching) -->
+
+    <!-- ============================================================== -->
+    <!-- PUBLICATIONS PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="publications">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Publications</span>
+                    <h2>Selected Works</h2>
+                </div>
+
+                <!-- Conference / journal photos gallery (placeholders) -->
+                <div class="pub-photos reveal">
+                    <div class="pub-photo">
+                        <img src="static/img/conference-1.jpg" alt="Conference photo placeholder" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');">
+                        <span class="pub-photo-label">📷 ENASE'24, France</span>
+                    </div>
+                    <div class="pub-photo">
+                        <img src="static/img/conference-2.jpg" alt="Conference photo placeholder" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');">
+                        <span class="pub-photo-label">📷 ICBC'23, Dubai</span>
+                    </div>
+                    <div class="pub-photo">
+                        <img src="static/img/conference-3.jpg" alt="Conference photo placeholder" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');">
+                        <span class="pub-photo-label">📷 IIT Patna Lab</span>
+                    </div>
+                    <div class="pub-photo">
+                        <img src="static/img/conference-4.jpg" alt="Conference photo placeholder" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');">
+                        <span class="pub-photo-label">📷 Montreal Lab</span>
+                    </div>
+                </div>
+
+                <!-- View all photos button -->
+                <div class="pub-photos-cta reveal">
+                    <a href="#gallery" data-page-link="gallery" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        View Full Photo Gallery
+                    </a>
+                </div>
+
+                <div class="pub-category">
+                    <h3 class="reveal">Journal Articles &amp; Book Chapters</h3>
+                    <ol class="pub-list stagger-children">
+                        <li class="reveal">
+                            <span class="pub-title">Making Robotic Swarms Trustful: A Blockchain-Based Perspective</span>
+                            <span class="pub-authors">Atul Thakur, <strong>Swagatika Sahoo</strong>, Arnab Mukherjee &amp; Raju Halder</span>
+                            <span class="pub-venue">Journal of Computing and Information Science in Engineering, Vol. 23, 060803 — ASME, 2023</span>
+                            <div class="pub-links">
+                                <a href="https://asmedigitalcollection.asme.org/computingengineering/article-abstract/23/6/060803/1160687" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">Contextual Attribute-Based Access Control Scheme for Cloud Storage Using Blockchain Technology</span>
+                            <span class="pub-authors">Suryakanta Panda, <strong>Swagatika Sahoo</strong>, Raju Halder &amp; Samrat Mondal</span>
+                            <span class="pub-venue">Software: Practice and Experience, Vol. 54 — WILEY, 2023</span>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">A Blockchain-Based Integrated and Interconnected Hybrid Platform for Smart City Ecosystem</span>
+                            <span class="pub-authors">Arnab Mukherjee, <strong>Swagatika Sahoo</strong> &amp; Raju Halder</span>
+                            <span class="pub-venue">Peer-to-Peer Networking and Applications, Vol. 15, pp. 2116–2141 — Springer Nature, 2022</span>
+                            <div class="pub-links">
+                                <a href="https://link.springer.com/article/10.1007/s12083-022-01338-z" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">AgroBLF: Blockchain-Based Framework for Smart Agriculture</span>
+                            <span class="pub-authors">Oindrila Bhadra, <strong>Swagatika Sahoo</strong>, Raju Halder &amp; Chandra Mohan Kumar</span>
+                            <span class="pub-venue">Innovations in Systems and Software Engineering — Springer, 2022 (Accepted)</span>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">A Unified Blockchain-Based Platform for Global E-Waste Management</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong>, Arnab Mukherjee &amp; Raju Halder</span>
+                            <span class="pub-venue">International Journal of Web Information Systems, Vol. 17(5), pp. 449–479 — Emerald Publishing, 2021</span>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.1108/IJWIS-03-2021-0024" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">Traceability and Ownership Claim of Data on Big Data Marketplace Using Blockchain Technology</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong> &amp; Raju Halder</span>
+                            <span class="pub-venue">Journal of Information and Telecommunication, Vol. 5(1), pp. 35–61 — Taylor &amp; Francis, 2021</span>
+                            <div class="pub-links">
+                                <a href="https://www.tandfonline.com/doi/full/10.1080/24751839.2020.1819634" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">A Hierarchical and Abstraction-Based Blockchain Model</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong>, Akshay M. Fajge, Raju Halder &amp; Agostino Cortesi</span>
+                            <span class="pub-venue">Applied Sciences, Vol. 9(11), pp. 1–20 — MDPI, 2019</span>
+                            <div class="pub-links">
+                                <a href="https://www.mdpi.com/2076-3417/9/11/2343/htm" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="pub-category">
+                    <h3 class="reveal">International Conference Proceedings</h3>
+                    <ol class="pub-list stagger-children">
+                        <li class="reveal">
+                            <span class="pub-title">Metasurance: A Blockchain-Based Insurance Management Framework for Metaverse</span>
+                            <span class="pub-authors">Aritra Bhaduri, Ayush Kumar Jain, <strong>Swagatika Sahoo</strong>, Raju Halder &amp; Chandra Mohan Kumar</span>
+                            <span class="pub-venue">Proc. of ENASE'24, pp. 190–201 — IEEE, Angers, France, April 2024</span>
+                            <div class="pub-links">
+                                <a href="https://www.scitepress.org/Papers/2024/127221/127221.pdf" target="_blank" rel="noopener">PDF →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">An Automated Policy Verification and Enforcement Framework for Ethereum Applications</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong>, Raju Halder &amp; Samrat Mondal</span>
+                            <span class="pub-venue">Proc. of IEEE ICBC'23, pp. 1–5 — IEEE, Dubai, UAE, May 2023</span>
+                            <div class="pub-links">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10174879" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">Decentralized Insurance Subrogation Using Blockchain</span>
+                            <span class="pub-authors">Oindrila Bhadra, <strong>Swagatika Sahoo</strong>, Chandra Mohan Kumar &amp; Raju Halder</span>
+                            <span class="pub-venue">Proc. of ICBTA'22 — ACM, China, December 2022</span>
+                            <div class="pub-links">
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3581971.3581972" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">BLRS: An Automated Land Records Management System Using Blockchain Technology</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong>, Saksham Jha, Somenath Sarkar &amp; Raju Halder</span>
+                            <span class="pub-venue">Proc. of ACSS'22 — Springer LNNS, Kolkata, India, Sept 2022</span>
+                            <div class="pub-links">
+                                <a href="https://www.iitp.ac.in/~halder/Papers/Conference/ACIIDS_2020.pdf" target="_blank" rel="noopener">PDF →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">Blockchain-Based Forward and Reverse Supply Chains for E-Waste Management</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong> &amp; Raju Halder</span>
+                            <span class="pub-venue">Proc. of FDSE'20, pp. 201–220 — Springer LNCS 12466, Binh Dinh, Vietnam, Nov 2020</span>
+                            <div class="pub-links">
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-030-63924-2_12" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">BDmark: A Blockchain-Driven Approach to Big Data Watermarking</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong>, Rishu Roshan, Vikash Singh &amp; Raju Halder</span>
+                            <span class="pub-venue">Proc. of ACIIDS'20, pp. 71–84 — Springer CCIS 1178, Phuket, Thailand, Mar 2020</span>
+                            <div class="pub-links">
+                                <a href="https://link.springer.com/chapter/10.1007/978-981-15-3380-8_7" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                        <li class="reveal">
+                            <span class="pub-title">A Parallel Forecasting Approach Using Incremental K-Means Clustering Technique</span>
+                            <span class="pub-authors"><strong>Swagatika Sahoo</strong></span>
+                            <span class="pub-venue">Proc. of CIDM'17 (AISC), pp. 165–172 — Springer Singapore, Bhubaneswar, India, Mar 2017</span>
+                            <div class="pub-links">
+                                <a href="https://link.springer.com/chapter/10.1007/978-981-10-3874-7_16" target="_blank" rel="noopener">DOI →</a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (publications) -->
+
+    <!-- ============================================================== -->
+    <!-- AWARDS PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="awards">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Recognition</span>
+                    <h2>Awards &amp; Honours</h2>
+                </div>
+                <ul class="awards-list stagger-children">
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Best Paper Award</span>
+                            <span class="award-detail">ACSS 2022</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Best Paper Presentation Award</span>
+                            <span class="award-detail">Research Scholar Day '21, IIT Patna</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Qualified GATE</span>
+                            <span class="award-detail">2013, 2014, 2016</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Qualified UGC NET (Assistant Professor)</span>
+                            <span class="award-detail">2018, 2019</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Assistant Professor Position</span>
+                            <span class="award-detail">GIET State University, Gunupur</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div><!-- /.page (awards) -->
+
+    <!-- ============================================================== -->
+    <!-- PEOPLE PAGE — Research Group -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="people">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Group</span>
+                    <h2>Research Group</h2>
+                </div>
+                <p class="reveal section-lede">
+                    I am building a research group at IIIT Dharwad focused on <strong>trustworthy and privacy-preserving systems</strong>.
+                    Our work spans blockchain, machine learning, and IoT security.
+                </p>
+
+                <!-- Supervisor -->
+                <h3 class="reveal">Principal Investigator</h3>
+                <div class="people-grid stagger-children">
+                    <div class="person-card reveal">
+                        <div class="person-photo person-photo-pi">
+                            <img src="static/img/profpic.jpeg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');">
+                            <span class="person-initial">SS</span>
+                        </div>
+                        <div class="person-info">
+                            <h4>Dr. Swagatika Sahoo</h4>
+                            <span class="person-role">Principal Investigator</span>
+                            <p class="person-affil">Assistant Professor, IIIT Dharwad</p>
+                            <p class="person-research">Blockchain, ML, IoT Security</p>
+                            <a href="/cdn-cgi/l/email-protection#dba8acbabcbaafb2b0ba9bb2b2b2afbfacbff5bab8f5b2b5" class="person-link"><span class="__cf_email__" data-cfemail="1a696d7b7d7b6e73717b5a7373736e7e6d7e347b79347374">[email&#160;protected]</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current PhD Students -->
+                <h3 class="reveal">Current PhD Students</h3>
+                <div class="people-grid stagger-children">
+                    <div class="person-card reveal">
+                        <div class="person-photo no-img">
+                            <span class="person-initial">?</span>
+                        </div>
+                        <div class="person-info">
+                            <h4>Open Position</h4>
+                            <span class="person-role">PhD Student (1–2 positions available)</span>
+                            <p class="person-affil">Starting Fall 2026</p>
+                            <p class="person-research">Blockchain Security, Federated Learning</p>
+                            <a href="#prospective" data-page-link="prospective" class="person-link">How to apply →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- M.Tech / B.Tech Students -->
+                <h3 class="reveal">Master's &amp; Undergraduate Students</h3>
+                <div class="people-grid stagger-children">
+                    <div class="person-card reveal">
+                        <div class="person-photo no-img">
+                            <span class="person-initial">+</span>
+                        </div>
+                        <div class="person-info">
+                            <h4>Open Positions</h4>
+                            <span class="person-role">M.Tech / B.Tech Thesis Students</span>
+                            <p class="person-affil">IIIT Dharwad</p>
+                            <p class="person-research">Topics available in blockchain, ML security, IoT</p>
+                            <a href="/cdn-cgi/l/email-protection#b3c0c4d2d4d2c7dad8d2f3dadadac7d7c4d79dd2d09ddadd" class="person-link">Email to discuss →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alumni -->
+                <h3 class="reveal">Alumni &amp; Former Mentees</h3>
+                <div class="alumni-grid stagger-children">
+                    <div class="alumni-card reveal">
+                        <span class="alumni-year">2016 – 2019</span>
+                        <h4>Assistant Professor Role</h4>
+                        <p>GIET State University, Gunupur — taught undergraduate CS courses and supervised student projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (people) -->
+
+    <!-- ============================================================== -->
+    <!-- PROSPECTIVE STUDENTS PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="prospective">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Recruiting</span>
+                    <h2>Prospective Students</h2>
+                </div>
+
+                <div class="hiring-banner reveal">
+                    <div class="hiring-pulse"></div>
+                    <div>
+                        <h3>I am looking for motivated PhD students!</h3>
+                        <p>Applications are open for <strong>Fall 2026 intake</strong> at IIIT Dharwad. Research areas include blockchain, federated learning, and IoT security.</p>
+                    </div>
+                </div>
+
+                <h3 class="reveal">What I'm Looking For</h3>
+                <div class="research-text">
+                    <ul class="research-list reveal">
+                        <li>Strong background in computer science, mathematics, or related fields</li>
+                        <li>Genuine curiosity about security, privacy, and decentralized systems</li>
+                        <li>Solid programming skills (Python, C/C++, Java, or Solidity)</li>
+                        <li>Familiarity with at least one of: blockchain, machine learning, IoT, cryptography</li>
+                        <li>Self-motivated, independent researcher with strong communication skills</li>
+                        <li>Qualified in GATE / UGC NET (preferred but not mandatory for all positions)</li>
+                    </ul>
+                </div>
+
+                <h3 class="reveal">What I Offer</h3>
+                <div class="research-text">
+                    <ul class="research-list reveal">
+                        <li>Fully funded PhD position with competitive monthly stipend</li>
+                        <li>Access to IIIT Dharwad's research infrastructure and compute resources</li>
+                        <li>Mentorship for top-tier publications (IEEE, ACM, Springer)</li>
+                        <li>Conference travel funding for accepted papers</li>
+                        <li>Collaborative environment with peers in blockchain, ML, and security</li>
+                        <li>Opportunities for industry internships and international collaborations</li>
+                    </ul>
+                </div>
+
+                <h3 class="reveal">How to Apply</h3>
+                <div class="research-text">
+                    <p class="reveal">
+                        Please email me at <a href="/cdn-cgi/l/email-protection#9ae9edfbfdfbeef3f1fbdaf3f3f3eefeedfeb4fbf9b4f3f4"><strong><span class="__cf_email__" data-cfemail="b4c7c3d5d3d5c0dddfd5f4ddddddc0d0c3d09ad5d79addda">[email&#160;protected]</span></strong></a> with the subject line
+                        <em>"Prospective PhD Student — [Your Name]"</em>, and include:
+                    </p>
+                    <ul class="research-list reveal">
+                        <li>Your CV / résumé (with academic transcripts)</li>
+                        <li>A short statement of research interests (½–1 page)</li>
+                        <li>Your GATE / UGC NET score (if applicable)</li>
+                        <li>Names and contact of 2 references (optional but helpful)</li>
+                        <li>Links to any publications, code repositories, or projects (if any)</li>
+                    </ul>
+                    <p class="reveal" style="margin-top: 1.5rem;">
+                        <strong>Note:</strong> I read every email personally but receive many. Please make your email concise and your CV well-organized.
+                        I typically respond within <strong>1–2 weeks</strong>.
+                    </p>
+                </div>
+
+                <div class="vision-box reveal" style="margin-top: 2.5rem;">
+                    <h3>📋 Application Deadlines</h3>
+                    <p>
+                        For <strong>Fall 2026</strong> intake, applications through the IIIT Dharwad admission portal typically close in <strong>April–May 2026</strong>.
+                        Early applications are strongly encouraged. Please check the official portal for exact dates and eligibility criteria.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (prospective) -->
+
+    <!-- ============================================================== -->
+    <!-- TALKS / INVITED TALKS PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="talks">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Presentations</span>
+                    <h2>Invited Talks &amp; Presentations</h2>
+                </div>
+                <p class="reveal section-lede">
+                    A selection of invited talks, conference presentations, and guest lectures delivered at academic and industry venues.
+                </p>
+
+                <ul class="awards-list stagger-children">
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Blockchain for Trust in Distributed IoT Systems</span>
+                            <span class="award-detail">Invited talk at the International Workshop on Distributed Computing · Angers, France · April 2024</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Metasurance: Insurance for the Metaverse</span>
+                            <span class="award-detail">ENASE'24 · Angers, France · April 2024</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Automated Policy Verification for Ethereum Applications</span>
+                            <span class="award-detail">IEEE ICBC'23 · Dubai, UAE · May 2023</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Decentralized Insurance Subrogation Using Blockchain</span>
+                            <span class="award-detail">ICBTA'22 · ACM, China · December 2022</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Best Paper Presentation — Land Records on Blockchain</span>
+                            <span class="award-detail">ACSS 2022 · Awards ceremony · September 2022</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Research Day Best Presentation</span>
+                            <span class="award-detail">IIT Patna Research Scholar Day · 2021</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">E-Waste Traceability with Blockchain</span>
+                            <span class="award-detail">FDSE'20 · Binh Dinh, Vietnam · November 2020</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Blockchain-Driven Big Data Watermarking (BDmark)</span>
+                            <span class="award-detail">ACIIDS'20 · Phuket, Thailand · March 2020</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Introduction to Blockchain Technology</span>
+                            <span class="award-detail">Guest lecture at GIET University · 2018</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Parallel Forecasting with Incremental K-Means</span>
+                            <span class="award-detail">CIDM'17 · Bhubaneswar, India · March 2017</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div><!-- /.page (talks) -->
+
+    <!-- ============================================================== -->
+    <!-- SERVICE & PROFESSIONAL ACTIVITIES -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="service">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Service</span>
+                    <h2>Service &amp; Professional Activities</h2>
+                </div>
+                <p class="reveal section-lede">
+                    Academic service contributions including editorial roles, conference committees, and peer review.
+                </p>
+
+                <h3 class="reveal">Editorial &amp; Reviewer Roles</h3>
+                <ul class="awards-list stagger-children">
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Reviewer — Journal of Computing and Information Science in Engineering (ASME)</span>
+                            <span class="award-detail">2021 – Present</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Reviewer — Software: Practice and Experience (WILEY)</span>
+                            <span class="award-detail">2022 – Present</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Reviewer — Peer-to-Peer Networking and Applications (Springer)</span>
+                            <span class="award-detail">2021 – Present</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Reviewer — Applied Sciences (MDPI)</span>
+                            <span class="award-detail">2019 – Present</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Reviewer — International Journal of Web Information Systems (Emerald)</span>
+                            <span class="award-detail">2021 – Present</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="reveal">Conference Technical Program Committees</h3>
+                <ul class="awards-list stagger-children">
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">TPC Member — IEEE International Conference on Blockchain and Cryptocurrency (ICBC)</span>
+                            <span class="award-detail">2023 – Present</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">TPC Member — International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE)</span>
+                            <span class="award-detail">2022 – Present</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">TPC Member — International Conference on Future Data and Security Engineering (FDSE)</span>
+                            <span class="award-detail">2020 – Present</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="reveal">Membership in Professional Bodies</h3>
+                <ul class="awards-list stagger-children">
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Member — ACM (Association for Computing Machinery)</span>
+                            <span class="award-detail">2019 – Present</span>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <div class="award-content">
+                            <span class="award-title">Member — IEEE Computer Society</span>
+                            <span class="award-detail">2020 – Present</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div><!-- /.page (service) -->
+
+    <!-- ============================================================== -->
+    <!-- TOOLS & DATA / OPEN SOURCE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="tools">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Open Source</span>
+                    <h2>Tools &amp; Datasets</h2>
+                </div>
+                <p class="reveal section-lede">
+                    Open-source code, tools, and datasets released as part of my research. All projects are publicly available on GitHub.
+                </p>
+
+                <div class="project-grid stagger-children">
+                    <div class="project-card reveal">
+                        <div class="project-icon">📜</div>
+                        <h4>Land Registry Network</h4>
+                        <p>Blockchain-based application for managing land registry activities, built on Hyperledger Fabric with Go and JavaScript.</p>
+                        <a href="https://github.com/swagatikasun/land-registry-network" target="_blank" rel="noopener" class="btn btn-outline">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-icon">♻️</div>
+                        <h4>E-Waste Management &amp; Traceability</h4>
+                        <p>Decentralized system for forward and reverse supply chain traceability in e-waste management using smart contracts.</p>
+                        <a href="https://github.com/swagatikasun/e-waste-management-ether" target="_blank" rel="noopener" class="btn btn-outline">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            View Repository
+                        </a>
+                    </div>
+                </div>
+
+                <h3 class="reveal">Datasets</h3>
+                <div class="research-text">
+                    <ul class="research-list reveal">
+                        <li><em>Coming soon:</em> Curated blockchain transaction datasets for Ethereum phishing detection research</li>
+                        <li><em>Coming soon:</em> IoT authentication benchmark dataset for lightweight cryptography evaluation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (tools) -->
+
+    <!-- ============================================================== -->
+    <!-- VIDEOS PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="videos">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Media</span>
+                    <h2>Talks &amp; Lectures</h2>
+                </div>
+                <p class="reveal section-lede">
+                    Selected recordings of invited talks, conference presentations, and guest lectures on blockchain, machine learning, and IoT security.
+                </p>
+
+                <!-- Featured Video -->
+                <div class="video-featured reveal">
+                    <div class="video-embed">
+                        <div class="video-placeholder" data-video-id="dQw4w9WgXcQ" data-video-type="youtube">
+                            <img src="static/img/conference-1.jpg" alt="Featured talk thumbnail" onerror="this.style.display='none'; this.parentElement.classList.add('no-thumb');">
+                            <div class="video-play-btn" aria-label="Play video">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-duration">42:18</div>
+                            <div class="video-overlay-label">▶ YouTube Placeholder</div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-badge">Featured Talk</span>
+                        <h3>Blockchain for Trust in Distributed IoT Systems</h3>
+                        <p class="video-meta">Invited talk at the International Workshop on Distributed Computing · Angers, France · April 2024</p>
+                        <p>An overview of self-sovereign identity frameworks and how decentralized identifiers (DIDs) can enable secure authentication in large-scale IoT deployments.</p>
+                    </div>
+                </div>
+
+                <!-- Video Grid -->
+                <h3 class="reveal" style="margin-top: 3rem;">More Videos</h3>
+                <div class="video-grid stagger-children">
+                    <div class="video-card reveal">
+                        <div class="video-thumb" data-video-id="dQw4w9WgXcQ" data-video-type="youtube">
+                            <img src="static/img/conference-2.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('no-thumb');">
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-duration">28:45</div>
+                            <div class="video-overlay-label">▶ YouTube Placeholder</div>
+                        </div>
+                        <div class="video-card-body">
+                            <h4>Metasurance: Insurance for the Metaverse</h4>
+                            <p>ENASE'24 · Angers, France</p>
+                        </div>
+                    </div>
+                    <div class="video-card reveal">
+                        <div class="video-thumb" data-video-id="dQw4w9WgXcQ" data-video-type="youtube">
+                            <img src="static/img/conference-3.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('no-thumb');">
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-duration">35:12</div>
+                            <div class="video-overlay-label">▶ YouTube Placeholder</div>
+                        </div>
+                        <div class="video-card-body">
+                            <h4>Smart Contract Verification on Ethereum</h4>
+                            <p>IEEE ICBC'23 · Dubai, UAE</p>
+                        </div>
+                    </div>
+                    <div class="video-card reveal">
+                        <div class="video-thumb" data-video-id="dQw4w9WgXcQ" data-video-type="youtube">
+                            <img src="static/img/conference-4.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('no-thumb');">
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-duration">22:30</div>
+                            <div class="video-overlay-label">▶ YouTube Placeholder</div>
+                        </div>
+                        <div class="video-card-body">
+                            <h4>E-Waste Traceability with Blockchain</h4>
+                            <p>FDSE'20 · Vietnam</p>
+                        </div>
+                    </div>
+                    <div class="video-card reveal">
+                        <div class="video-thumb video-local" data-video-src="static/videos/guest-lecture.mp4" data-video-type="local">
+                            <div class="video-local-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>
+                            </div>
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-duration">48:55</div>
+                            <div class="video-overlay-label">▶ Local Placeholder</div>
+                        </div>
+                        <div class="video-card-body">
+                            <h4>Guest Lecture: Introduction to Blockchain</h4>
+                            <p>GIET University · 2018</p>
+                        </div>
+                    </div>
+                    <div class="video-card reveal">
+                        <div class="video-thumb video-local" data-video-src="static/videos/research-talk.mp4" data-video-type="local">
+                            <div class="video-local-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>
+                            </div>
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-duration">31:20</div>
+                            <div class="video-overlay-label">▶ Local Placeholder</div>
+                        </div>
+                        <div class="video-card-body">
+                            <h4>Research Talk: Federated Learning &amp; IoT</h4>
+                            <p>University of Montreal · 2024</p>
+                        </div>
+                    </div>
+                    <div class="video-card reveal">
+                        <div class="video-thumb" data-video-id="dQw4w9WgXcQ" data-video-type="youtube">
+                            <img src="static/img/conference-1.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('no-thumb');">
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-duration">19:08</div>
+                            <div class="video-overlay-label">▶ YouTube Placeholder</div>
+                        </div>
+                        <div class="video-card-body">
+                            <h4>Best Paper Talk: Land Registry on Blockchain</h4>
+                            <p>ACSS 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload note removed -->
+            </div>
+        </section>
+
+    </div><!-- /.page (videos) -->
+
+    <!-- ============================================================== -->
+    <!-- GALLERY PAGE -->
+    <!-- ============================================================== -->
+    <div class="page" data-page="gallery">
+
+        <section>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">Memories</span>
+                    <h2>Photo Gallery</h2>
+                </div>
+                <p class="reveal section-lede">
+                    Moments captured at conferences, workshops, lab sessions, and academic events.
+                    Each photo tells a story of collaboration, discovery, and the academic journey.
+                </p>
+
+                <!-- Filter bar -->
+                <div class="gallery-filters reveal" id="galleryFilters">
+                    <button class="gallery-filter active" data-filter="all">All</button>
+                    <button class="gallery-filter" data-filter="conference">Conferences</button>
+                    <button class="gallery-filter" data-filter="lab">Labs</button>
+                    <button class="gallery-filter" data-filter="workshop">Workshops</button>
+                    <button class="gallery-filter" data-filter="award">Awards</button>
+                    <button class="gallery-filter" data-filter="lecture">Lectures</button>
+                </div>
+
+                <!-- Photo grid -->
+                <div class="gallery-grid stagger-children" id="galleryGrid">
+
+                    <div class="gallery-item reveal" data-category="conference">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-1.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 ENASE'24<br><small>Angers, France</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Conference</span>
+                                <h4>ENASE 2024 — Angers, France</h4>
+                                <p>Presented the Metasurance framework for blockchain-based insurance in the Metaverse.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> International conference on Evaluation of Novel Approaches to Software Engineering</p>
+                                <p class="gallery-date"><strong>Date:</strong> April 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="conference">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-2.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 ICBC'23<br><small>Dubai, UAE</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Conference</span>
+                                <h4>IEEE ICBC 2023 — Dubai, UAE</h4>
+                                <p>Talk on automated policy verification and enforcement for Ethereum applications.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> IEEE International Conference on Blockchain and Cryptocurrency</p>
+                                <p class="gallery-date"><strong>Date:</strong> May 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="lab">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-3.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 PLANR Lab<br><small>IIT Patna</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Lab</span>
+                                <h4>PLANR Lab, IIT Patna</h4>
+                                <p>Blockchain &amp; Robotics Lab — daily research hub during Ph.D. studies.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Working session in the lab with co-researchers and students</p>
+                                <p class="gallery-date"><strong>Date:</strong> 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="lab">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-4.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 LRC Lab<br><small>Montreal</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Lab</span>
+                                <h4>LRC Lab, University of Montreal</h4>
+                                <p>Postdoctoral research on next-generation security for IoT systems.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Daily work at the LRC Lab during postdoctoral tenure</p>
+                                <p class="gallery-date"><strong>Date:</strong> 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="workshop">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-1.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 ACSS 2022<br><small>Best Paper</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Workshop</span>
+                                <h4>ACSS 2022 — Best Paper Award</h4>
+                                <p>Awarded Best Paper for the BLRS land records management work.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Annual Computer Science Society Summit — awards ceremony</p>
+                                <p class="gallery-date"><strong>Date:</strong> September 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="award">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-2.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 Research Day<br><small>IIT Patna</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Award</span>
+                                <h4>Research Scholar Day 2021</h4>
+                                <p>Best Paper Presentation Award at IIT Patna Research Scholar Day.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Annual research showcase and awards ceremony at IIT Patna</p>
+                                <p class="gallery-date"><strong>Date:</strong> 2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="lecture">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-3.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 Guest Lecture<br><small>GIET University</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Lecture</span>
+                                <h4>Guest Lecture at GIET University</h4>
+                                <p>Introductory lecture on blockchain technology for undergraduate students.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Invited guest lecture for B.Tech students</p>
+                                <p class="gallery-date"><strong>Date:</strong> 2018</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="lecture">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-4.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 Research Talk<br><small>Montreal</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Lecture</span>
+                                <h4>Research Talk — University of Montreal</h4>
+                                <p>Federated Learning and IoT — research seminar presentation.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Weekly research seminar at the LRC Lab</p>
+                                <p class="gallery-date"><strong>Date:</strong> 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="conference">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-1.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 FDSE'20<br><small>Vietnam</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Conference</span>
+                                <h4>FDSE 2020 — Vietnam (Virtual)</h4>
+                                <p>Presented work on blockchain-based e-waste supply chain traceability.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> International Conference on Future Data and Security Engineering</p>
+                                <p class="gallery-date"><strong>Date:</strong> November 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="workshop">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-2.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 ACIIDS'20<br><small>Thailand</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Workshop</span>
+                                <h4>ACIIDS 2020 — Phuket, Thailand</h4>
+                                <p>Presented BDmark — a blockchain-driven approach to big data watermarking.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Asian Conference on Intelligent Information and Database Systems</p>
+                                <p class="gallery-date"><strong>Date:</strong> March 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="lab">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-3.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 IIIT Dharwad<br><small>New Position</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Lab</span>
+                                <h4>IIIT Dharwad — Joining Day</h4>
+                                <p>First day as Assistant Professor at the Department of CSE, IIIT Dharwad.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> Joining ceremony and office setup</p>
+                                <p class="gallery-date"><strong>Date:</strong> January 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item reveal" data-category="award">
+                        <div class="gallery-photo">
+                            <img src="static/img/conference-4.jpg" alt="" onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-img');">
+                            <span class="gallery-placeholder">📷 GATE / NET<br><small>Qualification</small></span>
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Award</span>
+                                <h4>GATE &amp; UGC NET Qualifications</h4>
+                                <p>Qualified GATE in 2013, 2014, 2016 and UGC NET in 2018, 2019.</p>
+                                <p class="gallery-occasion"><strong>Occasion:</strong> National-level examination qualifications</p>
+                                <p class="gallery-date"><strong>Date:</strong> 2013 – 2019</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page (gallery) -->
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark">SS</span>
+                <div>
+                    <strong>Swagatika Sahoo</strong>
+                    <span>Assistant Professor, IIIT Dharwad</span>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2026 Swagatika Sahoo. All rights reserved.</p>
+            <p class="footer-sub">Department of Computer Science &amp; Engineering &bull; IIIT Dharwad</p>
+            <p class="footer-updated">Last updated: <strong>January 2026</strong></p>
+            <div class="footer-links">
+                <a href="/cdn-cgi/l/email-protection#6b181c0a0c0a1f02000a2b0202021f0f1c0f450a08450205">Contact</a>
+                <a href="https://github.com/swagatikasun" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Scholar</a>
+                <a href="https://www.linkedin.com/in/swagatikasahoo" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1d882bb3d50498d',t:'MTc4NDQ1MTM2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
